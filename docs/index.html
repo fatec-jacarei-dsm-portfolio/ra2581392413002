@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel='stylesheet' type='text/css' href='./src/index.css'></link>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Vitor Francisco de Azevedo Zonzini</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#areas" class="nav-link">Áreas</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Cultura e Saúde,<br> Finanças e Tecnologia</h1>
+            <p class="hero-subtitle">Unindo diferentes áreas para trazer soluções inovadoras e significativas.</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h1>Sobre Mim</h1>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Minha missão é quebrar barreiras. Minha visão é multidisciplinar e holística. Meus valores são: Prudência, Honestidade e Humildade.</p>
+                    <p>Sou um profissional generalista com formação holística, permitindo uma abordagem multidisciplinar e prudente frente problemas.<br>Minha trajetória abrange artes, finanças, saúde, computação, entre outras.</p>
+                    <p>Acredito que a união entre diferentes campos do conhecimento é solo para soluções inovadoras, criativas e justas.</p>
+                </div>
+<div class="sobre-imagem">
+    <div class="video-profile-wrapper">
+        <video controls class="video-profile">
+            <source src="./docs/video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação -->
+    <section id="areas" class="areas">
+        <div class="container">
+            <h2>Áreas de Atuação</h2>
+            <div class="areas-container">
+                <div class="area-card arte">
+                    <div class="area-icon">🎨</div>
+                    <h3 class="area-title">Artes</h3>
+                    <p>A Arte sempre teve papel central na minha vida. Hoje, participo de projetos culturais com meus pares.</p>
+                </div>
+                <div class="area-card saude">
+                    <div class="area-icon">❤️</div>
+                    <h3 class="area-title">Saúde</h3>
+                    <p>Saúde e Bem-Estar foi uma área conquistada. Tenho formação na psicanálise freudiana.</p>
+                </div>
+                
+                <div class="area-card financas">
+                    <div class="area-icon">$</div>
+                    <h3 class="area-title">Finanças</h3>
+                    <p>Atuando na área contábil, tive o privilégio de observar e aprender sobre Economia, Direito e Finanças.</p>
+                </div>
+                <div class="area-card programacao">
+                    <div class="area-icon">💻</div>
+                    <h3 class="area-title">Computação</h3>
+                    <p>Desenvolvimento de software em Python, Node.js, C/C++, entre outros. Criação de aplicações web, mobile e sistemas que solucionam problemas reais através da tecnologia.
+                        <br>Acompanhe mais em: 
+                        <a 
+                        href="https://github.com/frevisto"
+                        target="_blank"
+                        style="cursor: pointer;color:antiquewhite;"
+                        >https://github.com/frevisto</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+             <div class="filtro-container">
+                <select class="filtro-select" id="filtro-categorias">
+                    <option value="todos">Todos os Projetos</option>
+                    <option value="arte">Artes</option>
+                    <option value="saude">Saúde</option>
+                    <option value="programacao">Programação</option>
+                    <option value="financas">Finanças</option>
+                </select>
+            </div>
+
+                <div class="projetos-grid">
+                <div class="projeto-card" data-categorias="arte">
+                    <img src="./docs/teatro.jpeg" alt="Teatro Espírita" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3 class="projeto-titulo">Teatro Espírita</h3>
+                        <span class="projeto-categoria categoria-arte">Arte</span>
+                        <p>Grupo teatral que explora temas espíritas e sociais através da performance.</p>
+                    </div>
+                </div>
+                <div class="projeto-card" data-categorias="arte programacao">
+                    <img src="./docs/xadrez.jpg" alt="Aulas de Xadrez" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3 class="projeto-titulo">Aulas de Xadrez</h3>
+                        <span class="projeto-categoria categoria-arte">Arte</span>
+                        <span class="projeto-categoria categoria-programacao">Programação</span>
+                        <p>Aulas de xadrez para todos.<br>“What is the game of chess? Is it a sport? Or is it a science? Or an art?” (Kasparov, p. 1). ISBN 0 7134 55268</p>
+                    </div>
+                </div>
+                <div class="projeto-card" data-categorias="programacao">
+                    <img src="./docs/queimadas.png" alt="Projeto Queimadas" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3 class="projeto-titulo">Projeto Queimadas - INPE</h3>
+                        <span class="projeto-categoria categoria-programacao">Programação</span>
+                        <p>Participação no projeto de combate a queimadas em áreas protegidas.<br>Desenvolvimento de testes unitários e um protótipo
+                            <a 
+                            target="_blank" 
+                            href="./docs/queimadas.png"
+                            style="cursor: pointer;color: rgba(0, 0, 255, 0.53);"
+                            >(ver imagem)</a>.</p>
+                    </div>
+                </div>
+                <div class="projeto-card" data-categorias="arte">
+                    <img src="./docs/coral.jpg" alt="Coral Espírita" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3 class="projeto-titulo">Coral Espírita</h3>
+                        <span class="projeto-categoria categoria-arte">Arte</span>
+                        <p>Performance em grupo de coral com músicas espíritas.</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card" data-categorias="saude">
+                    <img src="./docs/psicanalise.jpg" alt="Psicanálise" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3 class="projeto-titulo">Psicanálise</h3>
+                        <span class="projeto-categoria categoria-saude">Saúde</span>
+                        <p>Formação em psicanálise freudiana, com foco na compreensão profunda do comportamento humano e suas motivações inconscientes.</p>
+                    </div>
+            </div>
+
+                <div class="projeto-card" data-categorias="programacao">
+                    <img src="./docs/steelhard-logo-prototype.png" alt="Steel-Hard" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3 class="projeto-titulo">Steel-Hard</h3>
+                        <span class="projeto-categoria categoria-programacao">Programação</span>
+                        <p>Participação no grupo como Scrum-Master, Product Owner e Devops em aplicações com fins didáticos e funcionais.
+                            <br>Mais informações em:
+                            <a 
+                            target="_blank" 
+                            href="https://github.com/Steel-Hard"
+                            style="cursor: pointer;color: rgba(0, 0, 255, 0.53);"
+                            >https://github.com/Steel-Hard</a>.</p>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h1>Entre em Contato</h1>
+            <div class="contato-container">
+                <div class="contato-info">
+                    <div class="contato-item">
+                        <ul style="margin-left: 2rem; font-size: large; font-weight: bold;">
+                        <li>vitor.zonzini@fatec.sp.gov.br</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./src/index.js">
+    
+    </script>
+</body>
+</html>
